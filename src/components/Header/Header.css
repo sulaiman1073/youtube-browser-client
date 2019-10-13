@@ -1,0 +1,20 @@
+.Header--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  background-color: var(--color-secondary);
+}
+
+.Header--container > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header--container > * > *:first-child {
+  margin-right: var(--space-xs);
+}

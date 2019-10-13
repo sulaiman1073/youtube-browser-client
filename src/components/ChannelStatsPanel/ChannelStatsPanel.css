@@ -1,0 +1,47 @@
+.ChannelStatsPanel--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg);
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+.ChannelStatsPanel--container > *:not(:last-child) {
+  margin-right: var(--space-md);
+}
+
+.ChannelStatsPanel--channel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+
+.ChannelStatsPanel--channel > img {
+  border-radius: 50px;
+  margin-right: var(--space-md);
+}
+
+.ChannelStatsPanel--stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .ChannelStatsPanel--container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ChannelStatsPanel--container > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: var(--space-lg);
+  }
+}

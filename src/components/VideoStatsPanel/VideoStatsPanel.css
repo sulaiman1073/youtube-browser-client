@@ -1,0 +1,14 @@
+.VideoStatsPanel--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: var(--space-lg);
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-shadow: 1px 1px 4px var(--color-dark);
+}
+
+.VideoStatsPanel--container > *:not(:last-child) {
+  margin-bottom: var(--space-md);
+}

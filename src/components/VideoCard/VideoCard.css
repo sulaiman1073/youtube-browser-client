@@ -1,0 +1,62 @@
+.VideoCard--container {
+  width: 100%;
+  padding: var(--space-md);
+  box-shadow: 1px 4px 10px var(--color-dark);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.VideoCard--container > *:not(:last-child) {
+  margin-bottom: var(--space-md);
+}
+
+.VideoCard--container img {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.25s;
+}
+
+.VideoCard--container img:hover {
+  border-color: #b5b5b5;
+  transform: scale(1.01);
+}
+
+.videoCard--header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.videoCard--header > *:not(:last-child) {
+  margin-right: var(--space-md);
+}
+
+.videoCard--bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.videoCard--bottom > *:first-child {
+  margin-right: var(--space-sm);
+}
+
+.videoCard--stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--space-md);
+}
+
+@media (max-width: 767px) {
+  .videoCard--bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .videoCard--bottom > *:first-child {
+    margin-right: 0;
+    margin-bottom: var(--space-md);
+  }
+}

@@ -1,0 +1,17 @@
+.HomePage--container {
+  flex-grow: 1;
+  padding: var(--space-lg);
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-shadow: 1px 1px 4px var(--color-dark);
+}
+.HomePage--container > *:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.HomePage--container > *:first-child > *:not(:last-child) {
+  margin-right: var(--space-xs);
+}

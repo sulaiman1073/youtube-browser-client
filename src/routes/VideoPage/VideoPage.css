@@ -1,0 +1,47 @@
+.VideoPage--container {
+  display: grid;
+  grid-template-areas:
+    "videoStats video"
+    "channelStats channelStats";
+  grid-template-columns: 1fr 2fr;
+  flex-grow: 1;
+}
+
+.VideoPage--video {
+  grid-area: video;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.VideoPage--video > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.VideoStatsPanel--container {
+  grid-area: videoStats;
+}
+.ChannelStatsPanel--container {
+  grid-area: channelStats;
+}
+
+.VideoPage--spinner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-lg);
+  height: 100%;
+}
+
+@media (max-width: 1023px) {
+  .VideoPage--container {
+    display: flex;
+    flex-direction: column;
+  }
+}
